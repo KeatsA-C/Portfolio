@@ -74,7 +74,7 @@ function MatrixText({ word }) {
           setDisplayed(typed.padEnd(word.length, " "));
           setCursorIndex(i);
           phase = 1;
-          timeoutId = setTimeout(typeNext, 300); // pause after wrong
+          timeoutId = setTimeout(typeNext, 100); // pause after wrong
           break;
 
         case 1: // erase (simulate backspace)
@@ -91,7 +91,7 @@ function MatrixText({ word }) {
           setCursorIndex(i + 1);
           i++;
           phase = 0;
-          timeoutId = setTimeout(typeNext, 350); // pause after correct
+          timeoutId = setTimeout(typeNext, 250); // pause after correct
           break;
       }
     };

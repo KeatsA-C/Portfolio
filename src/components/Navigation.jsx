@@ -1,10 +1,7 @@
 // components/Navigation.jsx
 import { Link as ScrollLink } from "react-scroll";
-import { useState } from "react";
 
-function Navigation() {
-  const [active, setActive] = useState("about");
-
+function Navigation({ activeSection }) {
   const navItems = [
     { id: "about", label: "About" },
     { id: "projects", label: "Projects" },
@@ -18,12 +15,14 @@ function Navigation() {
           <ScrollLink
             to={item.id}
             smooth={true}
-            duration={500}
-            offset={-80}
+            duration={250}
+            offset={-100}
             spy={true}
-            onSetActive={() => setActive(item.id)}
+            onSetActive={() => {}}
             className={`cursor-pointer text-xl transition duration-300 ${
-              active === item.id ? "underline text-indigo-500" : "text-white"
+              activeSection === item.id
+                ? "underline text-indigo-500"
+                : "text-white"
             }`}
           >
             {item.label}
