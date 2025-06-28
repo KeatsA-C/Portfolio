@@ -65,6 +65,27 @@ function About() {
         </li>
         <li>
           <h2 className="text-2xl pb-2 text-indigo-500">Project</h2>
+          <h4 className="my-2">WEB</h4>
+          <ul className="list-disc pl-5">
+            <li>
+              <h3>To-do App(Laravel)</h3>
+            </li>
+            <li>
+              <h3>Laptop-Shop(Laravel)</h3>
+            </li>
+            <li>
+              <h3>Dark-Flix(HTML+CSS)</h3>
+            </li>
+            <li>
+              <h3>OS GUI(HTML+CSS+JavaScript)</h3>
+            </li>
+          </ul>
+          <h4 className="my-2">MOBILE</h4>
+          <ul className="list-disc pl-5">
+            <li>
+              <h3>Tech Connect(Flutter)</h3>
+            </li>
+          </ul>
         </li>
       </ul>
       <hr className="m-8 border-t border-indigo-400" />

@@ -39,7 +39,7 @@ function Layout() {
         </a>
         <Navigation activeSection={activeSection} />
         <button className="font-aldrich border border-none bg-indigo-500 p-3 rounded-md text-white mr-3">
-          Contact
+          Send a Message
         </button>
       </div>
 
