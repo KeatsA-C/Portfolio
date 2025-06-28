@@ -32,7 +32,7 @@ function DynamicRoleHeading({ words = [] }) {
   }, [displayed, deleting, index]);
 
   return (
-    <div className="text-white w-1/3 m-16 font-aldrich">
+    <div className="text-white w-1/3 m-16 font-aldrich mt-32">
       <h1 className="text-5xl">
         I'm a <span className="text-indigo-500">{displayed}</span>
         <span
@@ -40,7 +40,7 @@ function DynamicRoleHeading({ words = [] }) {
           style={{ height: "1em", verticalAlign: "bottom" }}
         />
       </h1>
-      <p className="text-xl pt-5">
+      <p className="text-xl pt-5 ">
         I am a Computer Engineering student aspiring to become a software
         developer. As a hobbyist, I actively perform hands-on projects to apply
         and expand my academic knowledge in real-world applications. To further
