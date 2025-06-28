@@ -1,35 +1,23 @@
 import { useState } from "react";
 
-function importWebGallery() {
-  const modules = import.meta.glob(
-    "../assets/projects/Web/*.{jpg,jpeg,png,gif}",
-    { eager: true }
-  );
-  return Object.entries(modules).map(([path, mod]) => ({
-    src: mod.default,
-    title: path
-      .split("/")
-      .pop()
-      .replace(/\.[^/.]+$/, ""),
-  }));
-}
+const webImages = [
+  "Dark-Flix.png",
+  "Laptop-Shop.png",
+  "OS GUI.png",
+  "To-do_Laravel 0.png",
+  "To-do_Laravel 1.png",
+].map((name) => ({
+  src: `/projects/web/${name}`,
+  title: name.replace(/\.[^/.]+$/, ""),
+}));
 
-function importMobileGallery() {
-  const modules = import.meta.glob(
-    "../assets/projects/Mobile/*.{jpg,jpeg,png,gif}",
-    { eager: true }
-  );
-  return Object.entries(modules).map(([path, mod]) => ({
-    src: mod.default,
-    title: path
-      .split("/")
-      .pop()
-      .replace(/\.[^/.]+$/, ""),
-  }));
-}
-
-const webImages = importWebGallery();
-const mobileImages = importMobileGallery();
+const mobileImages = [
+  "Tech Connect(Flutter-Android_0).png",
+  "Tech Connect(Flutter-Android_1).png",
+].map((name) => ({
+  src: `/projects/mobile/${name}`,
+  title: name.replace(/\.[^/.]+$/, ""),
+}));
 
 function Projects() {
   const [selectedImage, setSelectedImage] = useState(null);

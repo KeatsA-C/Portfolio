@@ -18,7 +18,7 @@ function About() {
       <div className="flex justify-between">
         <DynamicRoleHeading words={roles} />
         <div className="flex justify-center items-center w-1/3">
-          <img src="./src/assets/mainp.png" alt="Profile" />
+          <img src="/mainp.png" alt="Profile" />
         </div>
         <VerticalTextSlider items={techStack} />
       </div>
