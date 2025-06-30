@@ -9,7 +9,7 @@ function Navigation({ activeSection }) {
   ];
 
   return (
-    <ul className="flex font-aldrich">
+    <ul className="hidden md:flex font-aldrich">
       {navItems.map((item) => (
         <li key={item.id} className="px-3">
           <ScrollLink

@@ -120,12 +120,6 @@ function Projects() {
               alt={selectedImage.title}
               className="max-h-[90vh] max-w-full rounded-lg shadow-lg"
             />
-            <button
-              onClick={closeModal}
-              className="absolute top-2 right-2 text-white text-3xl font-bold bg-black bg-opacity-60 rounded-full w-10 h-10 flex items-center justify-center hover:bg-opacity-90 transition"
-            >
-              &times;
-            </button>
           </div>
         </div>
       )}

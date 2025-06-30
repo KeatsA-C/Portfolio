@@ -23,7 +23,7 @@ function About() {
         <VerticalTextSlider items={techStack} />
       </div>
       <hr className="m-8 border-t border-indigo-400" />
-      <ul className="text-white flex justify-around font-aldrich">
+      <ul className="text-white flex flex-col md:flex-row justify-around font-aldrich">
         <li>
           <h2 className="text-2xl pb-2 text-indigo-500">Bootcamp</h2>
           <h4 className="my-2">ONECODECAMP</h4>
@@ -36,6 +36,7 @@ function About() {
             </li>
           </ul>
         </li>
+        <hr className="m-10 border-t border-indigo-400" />
         <li>
           <h2 className="text-2xl pb-2 text-indigo-500">Seminar</h2>
           <div>
@@ -63,6 +64,7 @@ function About() {
             </ul>
           </div>
         </li>
+        <hr className="m-10 border-t border-indigo-400" />
         <li>
           <h2 className="text-2xl pb-2 text-indigo-500">Project</h2>
           <h4 className="my-2">WEB</h4>
@@ -88,7 +90,7 @@ function About() {
           </ul>
         </li>
       </ul>
-      <hr className="m-8 border-t border-indigo-400" />
+      <hr className="m-10 border-t border-indigo-400" />
     </section>
   );
 }

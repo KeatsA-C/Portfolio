@@ -33,12 +33,15 @@ function Layout() {
 
   return (
     <>
-      <div className="bg-neutral-900 text-white p-5 justify-between items-center fixed top-0 lg:w-full z-50 bl hidden md:flex">
-        <a href="#about">
+      <div className="bg-neutral-900 text-white p-5 justify-between items-center md:fixed top-0 lg:w-full z-50 bl flex">
+        <a href="#about" className="">
           <MatrixText key={activeSection} word="KEATS" />
         </a>
         <Navigation activeSection={activeSection} />
-        <button className="font-aldrich border border-none bg-indigo-500 p-3 rounded-md text-white mr-3">
+        <button
+          disabled
+          className=" font-aldrich border border-none bg-indigo-500 p-3 rounded-md text-white mr-3"
+        >
           Send a Message
         </button>
       </div>
