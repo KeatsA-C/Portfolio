@@ -33,10 +33,10 @@ export default function VerticalTextSlider({ items = [], duration = 2500 }) {
         </div>
       </div>
       <p className="text-xl">
-        With a deep understanding of advanced tools, I provide solutions that
-        are not only efficient and scalable, but also fully adaptable to any
-        requirement. My goal is to offer services with no limitations—fast,
-        reliable, and built to perform.
+        Through exposure to the latest tech and AI tools, I deliver solutions
+        that efficiently solve challenges and scale with your needs. My goal is
+        to ensure your projects are handled quickly, reliably, and in a way that
+        can adapt to future demands.
       </p>
     </div>
   );
