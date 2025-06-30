@@ -14,10 +14,10 @@ const techStack = [
 
 function About() {
   return (
-    <section className="min-h-screen py-10 px-6">
-      <div className="flex justify-between">
+    <section className="min-h-screen py-10 px-6 w-full">
+      <div className="flex flex-col lg:flex-row justify-between items-center">
         <DynamicRoleHeading words={roles} />
-        <div className="flex justify-center items-center w-1/3">
+        <div className="flex justify-center items-center md:w-1/3">
           <img src="/mainp.png" alt="Profile" />
         </div>
         <VerticalTextSlider items={techStack} />

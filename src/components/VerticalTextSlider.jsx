@@ -20,7 +20,7 @@ export default function VerticalTextSlider({ items = [], duration = 2500 }) {
   }, [index, duration, items.length]);
 
   return (
-    <div className="w-1/3 m-16 font-aldrich text-white mt-32">
+    <div className="w-full lg:w-1/3 m-16 font-aldrich text-white mt-32">
       {/* Fancy Word Slider */}
       <div className="h-[3.2rem] overflow-hidden text-5xl text-indigo-500 relative mt-4 mb-4">
         <div

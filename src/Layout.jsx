@@ -33,7 +33,7 @@ function Layout() {
 
   return (
     <>
-      <div className="bg-neutral-900 text-white p-5 flex justify-between items-center fixed top-0 w-full z-50">
+      <div className="bg-neutral-900 text-white p-5 justify-between items-center fixed top-0 lg:w-full z-50 bl hidden md:flex">
         <a href="#about">
           <MatrixText key={activeSection} word="KEATS" />
         </a>
@@ -43,7 +43,7 @@ function Layout() {
         </button>
       </div>
 
-      <div className="pt-24">
+      <div className="md:pt-24">
         <div
           id="about"
           className={`transition-opacity duration-500 ease-in-out ${

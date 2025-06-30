@@ -32,9 +32,10 @@ function DynamicRoleHeading({ words = [] }) {
   }, [displayed, deleting, index]);
 
   return (
-    <div className="text-white w-1/3 m-16 font-aldrich mt-32">
+    <div className="text-white w-full lg:w-1/3 m-16 font-aldrich mt-32">
       <h1 className="text-5xl">
-        I'm a <span className="text-indigo-500">{displayed}</span>
+        I'm a <br className="block lg:hidden" />{" "}
+        <span className="text-indigo-500">{displayed}</span>
         <span
           className="inline-block w-2 bg-indigo-500 ml-1 animate-pulse"
           style={{ height: "1em", verticalAlign: "bottom" }}
