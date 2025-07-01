@@ -1,4 +1,3 @@
-// Layout.jsx
 import { useState, useEffect } from "react";
 import MatrixText from "./components/MatrixText";
 import Navigation from "./components/Navigation";
@@ -8,6 +7,19 @@ import Contact from "./pages/Contact";
 
 function Layout() {
   const [activeSection, setActiveSection] = useState("about");
+  const [pageLoaded, setPageLoaded] = useState(false); // State to track page load
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setPageLoaded(true); // Set opacity transition trigger after page load
+    };
+
+    window.addEventListener("load", handleLoad); // Listen for page load event
+
+    return () => {
+      window.removeEventListener("load", handleLoad); // Cleanup event listener
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +44,12 @@ function Layout() {
   }, []);
 
   return (
-    <>
+    <div
+      className={`transition-opacity duration-1000 ${
+        pageLoaded ? "opacity-100" : "opacity-0"
+      } min-h-screen`}
+    >
+      {/* Main content */}
       <div className="bg-neutral-900 text-white p-5 justify-between items-center md:fixed top-0 lg:w-full z-50 bl flex">
         <a href="#about" className="">
           <MatrixText key={activeSection} word="KEATS" />
@@ -52,7 +69,7 @@ function Layout() {
           className={`transition-opacity duration-500 ease-in-out ${
             activeSection === "about"
               ? "opacity-100 relative"
-              : "opacity-0 pointer-events-none  top-0 left-0 w-full"
+              : "opacity-0 pointer-events-none top-0 left-0 w-full"
           }`}
         >
           <About />
@@ -63,7 +80,7 @@ function Layout() {
           className={`transition-opacity duration-500 ${
             activeSection === "projects"
               ? "opacity-100 relative"
-              : "opacity-0 pointer-events-none  top-0 left-0 w-full"
+              : "opacity-0 pointer-events-none top-0 left-0 w-full"
           }`}
         >
           <Projects />
@@ -74,13 +91,13 @@ function Layout() {
           className={`transition-opacity duration-500 ${
             activeSection === "contact"
               ? "opacity-100 relative"
-              : "opacity-0 pointer-events-none  top-0 left-0 w-full"
+              : "opacity-0 pointer-events-none top-0 left-0 w-full"
           }`}
         >
           <Contact />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
