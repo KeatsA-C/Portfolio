@@ -10,15 +10,8 @@ function Layout() {
   const [pageLoaded, setPageLoaded] = useState(false); // State to track page load
 
   useEffect(() => {
-    const handleLoad = () => {
-      setPageLoaded(true); // Set opacity transition trigger after page load
-    };
-
-    window.addEventListener("load", handleLoad); // Listen for page load event
-
-    return () => {
-      window.removeEventListener("load", handleLoad); // Cleanup event listener
-    };
+    // Trigger fade-in immediately after mount
+    setTimeout(() => setPageLoaded(true), 100);
   }, []);
 
   useEffect(() => {
