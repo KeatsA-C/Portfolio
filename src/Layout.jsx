@@ -50,7 +50,7 @@ function Layout() {
         <Navigation activeSection={activeSection} />
         <button
           disabled
-          className=" font-aldrich border border-none bg-indigo-500 p-3 rounded-md text-white mr-3"
+          className="hidden sm:block text-xs p-2 md:text-md font-aldrich border border-none bg-indigo-500 md:p-3 rounded-md text-white mr-3"
         >
           Send a Message
         </button>
