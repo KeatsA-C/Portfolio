@@ -32,8 +32,8 @@ function About() {
       <hr className="m-8 border-t border-indigo-400" />
       <ul className="text-white flex flex-col md:flex-row justify-around font-aldrich">
         <li>
-          <h2 className="text-2xl pb-2 text-indigo-500">Bootcamp</h2>
-          <h4 className="my-2">ONECODECAMP</h4>
+          <h1 className="text-2xl pb-2 text-indigo-500">Bootcamp</h1>
+          <h2 className="my-2">ONECODECAMP</h2>
           <ul className="list-disc pl-5">
             <li>
               <h3>Front-End Fundamentals</h3>
@@ -45,9 +45,9 @@ function About() {
         </li>
         <hr className="m-10 border-t border-indigo-400" />
         <li>
-          <h2 className="text-2xl pb-2 text-indigo-500">Seminar</h2>
+          <h1 className="text-2xl pb-2 text-indigo-500">Seminar</h1>
           <div>
-            <h4 className="my-2">GREYWOLF TECHNOLOGIES PHILIPPINES</h4>
+            <h2 className="my-2">GREYWOLF TECHNOLOGIES PHILIPPINES</h2>
             <ul className="list-disc pl-5">
               <li>
                 <h3>Introduction to Machine Learning & Prompt Engineering</h3>
@@ -58,9 +58,9 @@ function About() {
             </ul>
           </div>
           <div>
-            <h4 className="my-2">
+            <h2 className="my-2">
               ASSOCIATION OF COMPUTER ENGINEERING STUDENTS
-            </h4>
+            </h2>
             <ul className="list-disc pl-5">
               <li>
                 <h3>Human Mission: Behind Cybersecurity</h3>
@@ -73,8 +73,8 @@ function About() {
         </li>
         <hr className="m-10 border-t border-indigo-400" />
         <li>
-          <h2 className="text-2xl pb-2 text-indigo-500">Project</h2>
-          <h4 className="my-2">WEB</h4>
+          <h1 className="text-2xl pb-2 text-indigo-500">Project</h1>
+          <h2 className="my-2">WEB</h2>
           <ul className="list-disc pl-5">
             <li>
               <h3>To-do App(Laravel)</h3>
@@ -89,7 +89,7 @@ function About() {
               <h3>OS GUI(HTML+CSS+JavaScript)</h3>
             </li>
           </ul>
-          <h4 className="my-2">MOBILE</h4>
+          <h2 className="my-2">MOBILE</h2>
           <ul className="list-disc pl-5">
             <li>
               <h3>Tech Connect(Flutter)</h3>
